@@ -230,6 +230,20 @@ free:
         self.display.sourceHover(event.clientX, event.clientY);
       });
 
+      document.addEventListener("touchmove", function(ev){
+        self.display.repaint();
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        /* 
+        track touch coordinates for displaying coordinates on complex plane,
+        and for animating interactive objects.   
+        */
+        self.display.pointIndicator(((ev.touches[0].pageX - width/2)/(height/SCALE_N)).toFixed(2),
+         ((-ev.touches[0].pageY + height/2)/(height/SCALE_N)).toFixed(2));
+        self.display.explain(ev.touches[0].pageX, ev.touches[0].pageY);
+        self.display.sourceHover(ev.touches[0].pageX, ev.touches[0].pageY);
+      });
+
       document.addEventListener("click", function(ev){
         // track mouse click on link to source code
         self.display.sourceLink(event.clientX, event.clientY);
