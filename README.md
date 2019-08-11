@@ -10,7 +10,7 @@ The canvas is displayed in HTML by DOM reference.
 ----
 **The Mandelbrot Set** is the set of complex numbers  <a href="https://www.codecogs.com/eqnedit.php?latex=C&space;=&space;x&plus;yi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C&space;=&space;x&plus;yi" title="C = x+yi" /></a>  for which sequences as defined by the following recurrence relation are not divergent (do not blow up to infinity):
 
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{cases}&space;&&space;z_{n&plus;1}&space;=&space;{z_n}^2&space;&plus;&space;C&space;\\&space;&&space;z_0&space;=&space;0&space;\end{cases}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;&&space;z_{n&plus;1}&space;=&space;{z_n}^2&space;&plus;&space;C&space;\\&space;&&space;z_0&space;=&space;0&space;\end{cases}" title="\begin{cases} & z_{n+1} = {z_n}^2 + C \\ & z_0 = 0 \end{cases}" /></a>
 
 
 
