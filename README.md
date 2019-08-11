@@ -1,2 +1,2 @@
-# mandelbrot-visualization
+# Mandelbrot Visualization
 Rendering the Mandelbrot Set in Javascript
