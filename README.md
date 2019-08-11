@@ -8,7 +8,7 @@ The canvas is displayed in HTML by DOM reference.
 **View the visualization [here](https://leosonh.github.io/mandelbrot-viz/mandelbrot.html)!**
 
 ----
-**The Mandelbrot Set** is the set of complex numbers <a href="https://www.codecogs.com/eqnedit.php?latex=C&space;=&space;x&plus;yi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C&space;=&space;x&plus;yi" title="C = x+yi" /></a> for which sequences as defined by the following recurrence relation are not divergent (do not blow up to infinity):
+**The Mandelbrot Set** is the set of complex numbers  <a href="https://www.codecogs.com/eqnedit.php?latex=C&space;=&space;x&plus;yi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C&space;=&space;x&plus;yi" title="C = x+yi" /></a>  for which sequences as defined by the following recurrence relation are not divergent (do not blow up to infinity):
 
 
 
