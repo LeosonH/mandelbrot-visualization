@@ -15,12 +15,27 @@ The canvas is displayed in HTML by DOM reference.
 The script uses an escape algorithm that iterates each point on the complex plane through the recurrence relation until a certain maximum norm is reached, or a maximum number of iterations is reached. The iteration number is then recorded and use to scale the color of each of the points on the visualization.
 
 ```javascript
-while ((current < MAX_ITERATIONS) && (x * x + y * y < MAX_NORM)) {
-   const xNext = x * x - y * y;
-   const yNext = 2 * x * y;
-   x = xNext + pointX;
-   y = yNext + pointY;
-   current++;
+function EscapeAlgorithm(pointX, pointY) {
+    // Escape Algorithm
+    var current = 0;
+    var x = 0;
+    var y = 0;
+    /*
+    While current iteration number is less than preset limit and norm is
+    less than its preset limit, repeat algorithm as defined by the mandelbrot
+    set recurrence relation, and increment iteration number. Return the
+    iteration number at the end. 
+    */
+    while ((current < MAX_ITERATIONS) && (x * x + y * y < MAX_NORM)) {
+      const xNext = x * x - y * y;
+      const yNext = 2 * x * y;
+      x = xNext + pointX;
+      y = yNext + pointY;
+      current++;
+    }
+
+    return current;
+}
 ```
 
 More about the Mandelbrot Set:
