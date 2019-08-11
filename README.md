@@ -1,2 +1,3 @@
 # Mandelbrot Visualization
-Rendering the Mandelbrot Set in Javascript and Canvas
+Rendering the Mandelbrot Set in Javascript.
+----
