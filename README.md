@@ -1,7 +1,7 @@
 # Mandelbrot Set Visualization
 Rendering the Mandelbrot Set in Javascript
 ----
-The JS source code is located at: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mandelbrot-viz/tree/master/docs/appscripts/mandelbrot.js)
+JS source file: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mandelbrot-viz/tree/master/docs/appscripts/mandelbrot.js)
 
 The canvas is displayed in HTML by DOM reference.
 
