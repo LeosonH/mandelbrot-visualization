@@ -236,6 +236,9 @@ free:
       });
 
       document.addEventListener("touchstart", function(ev){
+        self.display.repaint();
+        var width = window.innerWidth;
+        var height = window.innerHeight;
         // track touch events on link to source code
         self.display.sourceLink(ev.touches[0].pageX, ev.touches[0].pageY);
         self.display.pointIndicator(((ev.touches[0].pageX - width/2)/(height/SCALE_N)).toFixed(2),
