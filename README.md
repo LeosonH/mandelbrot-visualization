@@ -7,6 +7,13 @@ The canvas is displayed in HTML by DOM reference.
 
 **View the visualization [here](https://leosonh.github.io/mandelbrot-viz/mandelbrot.html)!**
 
+----
+**The Mandelbrot Set** is the set of complex numbers $C = x + yi$ for which sequences as defined by the following recurrence relation are not divergent (do not blow up to infinity):
+
+
+
+
+
 More about the Mandelbrot Set:
 - An excellent video from Numberphile featuring Dr. Holly Krieger:
 https://www.youtube.com/watch?v=NGMRB4O922I
