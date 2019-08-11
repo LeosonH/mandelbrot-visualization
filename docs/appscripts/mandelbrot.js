@@ -234,6 +234,11 @@ free:
         // track mouse click on link to source code
         self.display.sourceLink(event.clientX, event.clientY);
       });
+
+      document.addEventListener("touchstart", function(ev){
+        // track mouse click on link to source code
+        self.display.sourceLink(event.clientX, event.clientY);
+      });
     });
   }
 
