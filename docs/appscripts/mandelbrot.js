@@ -78,7 +78,7 @@ free:
     this.context.fillStyle = 'yellow';
     this.context.fillText("The Mandelbrot Set", 20, 30);
     this.context.drawImage(q_image, 245, 12, 25, 25);
-    this.context.fillText("source code", 20, 760);
+    this.context.fillText("source code", 20, window.innerHeight-32);
   }
 
   Display.prototype.tracker = function() {
@@ -91,8 +91,8 @@ free:
     // update point coordinate display 
     this.context.fillStyle = 'gold';
     this.context.fillText("Rendering Complete!", 20, 60);
-    this.context.fillText("X: " + x + "  Y: " + y, 1300, 30);
-    this.context.fillText("C = " + x + " + (" + y + ")i", 1280, 60);;
+    this.context.fillText("x: " + x + "  y: " + y, window.innerWidth-236, 30);
+    this.context.fillText("C = " + x + " + (" + y + ")i", window.innerWidth-256, 60);;
   }
 
   Display.prototype.explain = function(x, y) {
