@@ -112,16 +112,16 @@ free:
   Display.prototype.sourceHover = function(x, y) {
     if (x > 20 && y < 765
           && x < 250 && y > 740) {
-        this.context.fillText("source code (click!)", 20, 760);
+        this.context.fillText("source code (click!)", 20, window.innerHeight-32);
       } else {
-        this.context.fillText("source code", 20, 760);
+        this.context.fillText("source code", 20, window.innerHeight-32);
       }
   }
 
   Display.prototype.sourceLink = function(x, y) {
     // link to source code repository
-    if (x > 20 && y < 765
-          && x < 250 && y > 740) {
+    if (x > 20 && y < window.innerHeight-27
+          && x < 250 && y > window.innerHeight-52) {
         window.location.assign("https://www.github.com/LeosonH/mandelbrot-viz")
       }
   }
