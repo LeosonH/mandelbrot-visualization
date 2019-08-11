@@ -1,11 +1,11 @@
 # Mandelbrot Visualization
 Rendering the Mandelbrot Set in Javascript
 ----
-The js source code is located at: docs/appscripts/mandelbrot.js
+The JS source code is located at: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mandelbrot-viz/tree/master/docs/appscripts/mandelbrot.js)
 
 The canvas is displayed in HTML by DOM reference.
 
-**View the page here!**
+**View the page [here](https://leosonh.github.io/mandelbrot-viz/index.html)!**
 
 More about the Mandelbrot Set:
 - An excellent video from Numberphile featuring Dr. Holly Krieger:
