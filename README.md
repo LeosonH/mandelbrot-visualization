@@ -5,7 +5,9 @@ JS source file: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mande
 
 The canvas is displayed in HTML by DOM reference.
 
-**View the visualization [here](https://leosonh.github.io/mandelbrot-viz/mandelbrot.html)!**
+**View the visualization [here](https://leosonh.github.io/mandelbrot-viz/mandelbrot.html)!** 
+
+NOT compatible with Firefox/Internet Explorer. 
 
 ----
 **The Mandelbrot Set** is the set of complex numbers  <a href="https://www.codecogs.com/eqnedit.php?latex=C&space;=&space;x&plus;yi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C&space;=&space;x&plus;yi" title="C = x+yi" /></a>  for which sequences as defined by the following recurrence relation are not divergent (do not tend to infinity):
