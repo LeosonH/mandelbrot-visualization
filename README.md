@@ -41,7 +41,7 @@ function EscapeAlgorithm(pointX, pointY) {
 ```
 
 More about the Mandelbrot Set:
-- An excellent video from Numberphile featuring Dr. Holly Krieger:
+- An excellent video from Numberphile featuring [Dr. Holly Krieger](https://plus.maths.org/content/women-mathematics-holly-krieger):
 https://www.youtube.com/watch?v=NGMRB4O922I
 - Wolfram MathWorld's page on the Mandelbrot Set: 
 http://mathworld.wolfram.com/MandelbrotSet.html
