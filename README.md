@@ -14,7 +14,7 @@ NOT compatible with Firefox/Internet Explorer.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{cases}&space;&&space;z_{n&plus;1}&space;=&space;{z_n}^2&space;&plus;&space;C&space;\\&space;&&space;z_0&space;=&space;0&space;\end{cases}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{cases}&space;&&space;z_{n&plus;1}&space;=&space;{z_n}^2&space;&plus;&space;C&space;\\&space;&&space;z_0&space;=&space;0&space;\end{cases}" title="\begin{cases} & z_{n+1} = {z_n}^2 + C \\ & z_0 = 0 \end{cases}" /></a>
 
-The script uses an escape algorithm that iterates each point on the complex plane through the recurrence relation until a certain maximum norm is reached, or a maximum number of iterations is reached. The iteration number is then recorded and use to scale the color of each of the points on the visualization.
+The script uses an escape algorithm that iterates each point on the complex plane through the recurrence relation until a certain maximum norm is reached, or a maximum number of iterations is reached. The iteration number is then recorded and use to scale the color of each of the points on the canvas.
 
 ```javascript
 function EscapeAlgorithm(pointX, pointY) {
