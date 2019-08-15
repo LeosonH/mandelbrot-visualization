@@ -66,19 +66,19 @@ free:
     this.context.putImageData(this.imageData, 0, 0);
     // create axis lines
     this.context.beginPath();
-    this.context.moveTo(window.outerWidth/2, 0);
-    this.context.lineTo(window.outerWidth/2, window.outerHeight);
+    this.context.moveTo(window.innerWidth/2, 0);
+    this.context.lineTo(window.innerWidth/2, window.innerHeight);
     this.context.strokeStyle = "grey";  
     this.context.stroke();
     this.context.beginPath();
-    this.context.moveTo(0, window.outerHeight/2);
-    this.context.lineTo(window.outerWidth, window.outerHeight/2);
+    this.context.moveTo(0, window.innerHeight/2);
+    this.context.lineTo(window.innerWidth, window.innerHeight/2);
     this.context.stroke();
     // text
     this.context.fillStyle = 'yellow';
     this.context.fillText("The Mandelbrot Set", 20, 30);
     this.context.drawImage(q_image, 245, 12, 25, 25);
-    this.context.fillText("source code", 20, window.outerHeight-32);
+    this.context.fillText("source code", 20, window.innerHeight-32);
   }
 
   Display.prototype.tracker = function() {
@@ -263,8 +263,8 @@ free:
 
 // final rendering function
 function render() {
-  var width = window.outerWidth;
-  var height = window.outerHeight;
+  var width = window.innerWidth;
+  var height = window.innerHeight;
   // get canvas element from html
   var canvas = document.getElementById('myCanvas');
   var display = new Display(canvas, width, height);
