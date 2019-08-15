@@ -66,19 +66,19 @@ free:
     this.context.putImageData(this.imageData, 0, 0);
     // create axis lines
     this.context.beginPath();
-    this.context.moveTo(window.innerWidth/2, 0);
-    this.context.lineTo(window.innerWidth/2, window.innerHeight);
+    this.context.moveTo(this.width/2, 0);
+    this.context.lineTo(this.width/2, this.height);
     this.context.strokeStyle = "grey";  
     this.context.stroke();
     this.context.beginPath();
-    this.context.moveTo(0, window.innerHeight/2);
-    this.context.lineTo(window.innerWidth, window.innerHeight/2);
+    this.context.moveTo(0, this.height/2);
+    this.context.lineTo(this.width, this.height/2);
     this.context.stroke();
     // text
     this.context.fillStyle = 'yellow';
     this.context.fillText("The Mandelbrot Set", 20, 30);
     this.context.drawImage(q_image, 245, 12, 25, 25);
-    this.context.fillText("source code", 20, window.innerHeight-32);
+    this.context.fillText("source code", 20, this.height-32);
   }
 
   Display.prototype.tracker = function() {
@@ -91,8 +91,8 @@ free:
     // update point coordinate display 
     this.context.fillStyle = 'gold';
     this.context.fillText("Rendering Complete!", 20, 60);
-    this.context.fillText("x: " + x + "  y: " + y, window.innerWidth-236, 30);
-    this.context.fillText("C = " + x + " + (" + y + ")i", window.innerWidth-256, 60);;
+    this.context.fillText("x: " + x + "  y: " + y, this.width-236, 30);
+    this.context.fillText("C = " + x + " + (" + y + ")i", this.width-256, 60);;
   }
 
   Display.prototype.explain = function(x, y) {
@@ -110,18 +110,18 @@ free:
   }
 
   Display.prototype.sourceHover = function(x, y) {
-    if (x > 20 && y < window.innerHeight-27
-          && x < 250 && y > window.innerHeight-52) {
-        this.context.fillText("source code (click!)", 20, window.innerHeight-32);
+    if (x > 20 && y < this.height-27
+          && x < 250 && y > this.height-52) {
+        this.context.fillText("source code (click!)", 20, this.height-32);
       } else {
-        this.context.fillText("source code", 20, window.innerHeight-32);
+        this.context.fillText("source code", 20, this.height-32);
       }
   }
 
   Display.prototype.sourceLink = function(x, y) {
     // link to source code repository
-    if (x > 20 && y < window.innerHeight-27
-          && x < 250 && y > window.innerHeight-52) {
+    if (x > 20 && y < this.height-27
+          && x < 250 && y > this.height-52) {
         window.location.assign("https://www.github.com/LeosonH/mandelbrot-viz")
       }
   }
@@ -216,8 +216,8 @@ free:
       document.addEventListener("mousemove", function(ev){
         self.display.repaint();
 
-        var width = window.outerWidth;
-        var height = window.outerHeight;
+        var width = window.innerWidth;
+        var height = window.innerHeight;
         /* 
         track mouse coordinates for displaying coordinates on complex plane,
         and for animating interactive objects.   
