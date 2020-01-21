@@ -3,8 +3,6 @@ Rendering the Mandelbrot Set in Javascript
 ----
 JS source: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mandelbrot-viz/tree/master/docs/appscripts/mandelbrot.js)
 
-The canvas is displayed in HTML by DOM reference.
-
 **View the visualization [here](https://leosonh.github.io/mandelbrot-viz/mandelbrot.html)!** 
 
 NOT compatible with Firefox/Internet Explorer. 
