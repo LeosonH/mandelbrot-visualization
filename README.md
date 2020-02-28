@@ -1,5 +1,5 @@
 # Mandelbrot Set Visualization
-Rendering the Mandelbrot Set in Javascript
+Rendering the Mandelbrot Set in JavaScript
 ----
 JS source: [docs/appscripts/mandelbrot.js](https://github.com/LeosonH/mandelbrot-viz/tree/master/docs/appscripts/mandelbrot.js)
 
@@ -46,4 +46,3 @@ http://mathworld.wolfram.com/MandelbrotSet.html
 
 **Notes of thanks to:**
 - [Dr. Lonce Wyse](https://www.researchgate.net/profile/Lonce_Wyse3), my first and foremost mentor in all things Javascript and Canvas
-- Math, for being infuriating but often surprisingly beautiful
